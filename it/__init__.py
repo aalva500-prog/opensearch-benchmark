@@ -37,7 +37,7 @@ from osbenchmark import client, config, version, paths
 from osbenchmark.utils import process
 
 CONFIG_NAMES = ["in-memory-it", "os-it"]
-DISTRIBUTIONS = ["3.2.0", "3.3.2", "3.4.0"]
+DISTRIBUTIONS = ["2.17.1"]
 WORKLOADS = ["big5"]
 BASE_COMMANDS = ["opensearch-benchmark", "osb"]
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
@@ -203,7 +203,7 @@ class TestCluster:
 
 
 class OsMetricsStore:
-    VERSION = "3.2.0"
+    VERSION = "2.17.1"
 
     def __init__(self):
         self.cluster = TestCluster("in-memory-it")
